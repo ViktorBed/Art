@@ -1,0 +1,72 @@
+.hero{
+    display: flex;
+    margin: 120px 135px;
+}
+.left_block{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.desc{
+    width: 554px;
+    color: #81AFDD;
+    font-family: Manrope, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.form{
+    width: 630px;
+    height: 73px;
+}
+.email{
+    border-radius: 5px 0 0 5px;
+    background: #052D56;
+    width: 456px;
+    height: 73px;
+    color: #3D6184;
+    font-family: Manrope, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 23px;
+    border: none;
+    outline: none;
+}
+.get{
+    background-color: var(--red);
+    border-radius: 0 5px 5px 0;
+    width: 174px;
+    height: 73px;
+    color: #FFF;
+    font-family: Manrope, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+.signup{
+display: flex;
+    gap: 14px;
+    color: #FFF;
+    font-family: Manrope, serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+}
+.people{
+    width: 181px;
+    height: 38px;
+}
+.face{
+    display: flex;
+    margin-top: -100px;
+    width: 667px;
+    height: 701px;
+}
