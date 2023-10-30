@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./hero.css"
-import people from "../../photos/Group 81.png"
-import face from "../../photos/Illustration.png"
+import people from "../../photos/people.svg"
+import face from "../../photos/hero.png"
 
 export function Hero() {
     return (

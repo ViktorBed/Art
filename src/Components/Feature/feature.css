@@ -76,26 +76,95 @@
     gap: 5px;
 }
 
-.photo {
-    width: 546px;
-    height: 608px;
-}
-
 .message {
     position: absolute;
     background: var(--blue);
     width: 75px;
     height: 75px;
     border-radius: 16px;
-    top: 2480px;
-    left: 200px;
+    top: 2425px;
+    left: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 300;
 }
 
 .message svg {
     background: transparent;
     width: 38px;
     height: 38px;
+    z-index: 300;
+}
+
+.apps {
+    width: 174px;
+    height: 75px;
+    border-radius: 17px;
+    position: absolute;
+    top: 2560px;
+    left: 435px;
+    display: flex;
+    background: #FF8A71;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 100;
+}
+.apps div{
+    color: #FFF;
+    font-family: Manrope, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    background: transparent;
+}
+.apps svg{
+    background: transparent;
+}
+
+.photo {
+    width: 590px;
+    height: 608px;
+    z-index: 200;
+    position: absolute;
+    background: transparent;
+}
+.photo2{
+    width: 590px;
+    height: 608px;
+    z-index: 100;
+    position: absolute;
+    background: transparent;
+
+}
+.left_block{
+    width: 479px;
+    height: 334px;
+    padding: 250px 0 0 20px;
+}
+.left_text{
+    color: #81AFDD;
+    font-family: Manrope, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.explore {
+    color: #FF8A71;
+    font-family: Manrope, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.photos{
+    display: flex;
+    width: 546px;
+    height: 608px;
+}
+.features{
+    display: flex;
+    flex-direction: row;
 }
