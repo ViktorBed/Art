@@ -1,0 +1,53 @@
+.blog{
+    display: flex;
+    margin: 120px 135px;
+    flex-direction: column;
+    gap: 115px;
+}
+.blog_windows{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.blog_block{
+    width: 417px;
+    height: 408px;
+    background: #042C54;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+}
+.blog_block_small{
+    width: 327px;
+    height: 193px;
+    background: #042C54;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: space-between;
+}
+.block_content, .blog_left,.blog_mid,.block_top{
+    display: flex;
+    flex-direction: column;
+}
+.blog_mid{
+    gap: 49px;
+}
+
+.time{
+    color: #FFF;
+    font-family: Manrope, serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+}
+.text{
+    color: #FFF;
+    font-family: Manrope, serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+}

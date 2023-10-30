@@ -17,7 +17,6 @@
 .gpt_top{
     display: flex;
     justify-content: space-between;
-    background: transparent;
     align-items: center;
 
 }

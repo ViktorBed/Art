@@ -2,7 +2,7 @@ import React from "react";
 
 import "./feature.css"
 import vr from "../../photos/box.svg"
-import vr2 from "../../photos/img.svg"
+import vr2 from "../../photos/Image.svg"
 import vr3 from "../../photos/circle.svg"
 
 export function Feature() {
@@ -93,7 +93,7 @@ export function Feature() {
                             </svg>
                             <div>My Apps</div>
                         </div>
-                    <div className="left_block">
+                    <div className="left_down">
                         <h2>The possibilities are beyond your imagination</h2>
                             <div className="left_text">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</div>
                         <nav className="explore">Request Early Access to Get Started</nav>

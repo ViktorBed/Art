@@ -1,6 +1,5 @@
 .feature {
     width: 1154px;
-    height: 431px;
     display: flex;
     flex-direction: column;
     margin: 120px 135px;
@@ -91,7 +90,6 @@
 }
 
 .message svg {
-    background: transparent;
     width: 38px;
     height: 38px;
     z-index: 300;
@@ -117,10 +115,8 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    background: transparent;
 }
 .apps svg{
-    background: transparent;
 }
 
 .photo {
@@ -128,17 +124,14 @@
     height: 608px;
     z-index: 200;
     position: absolute;
-    background: transparent;
 }
 .photo2{
     width: 590px;
     height: 608px;
     z-index: 100;
     position: absolute;
-    background: transparent;
-
 }
-.left_block{
+.left_down{
     width: 479px;
     height: 334px;
     padding: 250px 0 0 20px;
