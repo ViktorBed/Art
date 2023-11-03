@@ -3,6 +3,7 @@
         scale: 1;
         flex-direction: column;
         height: 1400px;
+        align-items: center;
     }
     .navigation{
         display: none!important;
@@ -16,5 +17,8 @@
         margin-left: 1rem;
         position: relative;
         cursor: pointer;
+    }
+    .gpt_top_text{
+        max-width: 320px;
     }
 }
