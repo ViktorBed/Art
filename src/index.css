@@ -5,18 +5,18 @@
   scroll-behavior: smooth;
 }
 :root{
-  background: #040C18;
-  scrollbar-color: var(--rainbow) #181818 ;
-  --red: #FF4820;
+  background: #121212;
+  scrollbar-color: var(--gradient) #181818 ;
+  --button: #1f6e1a;
   --blue: #042C54;
-  --rainbow : linear-gradient(103deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;
+  --gradient : linear-gradient(132deg, rgba(54,238,250,1) 15%, rgba(250,134,55,1) 78%);
 }
 ::-webkit-scrollbar{
   background: #181818;
   width: .5vw;
 }
 ::-webkit-scrollbar-thumb{
-  background:  var(--rainbow);
+  background:  var(--gradient);
   border-radius: 12px;
 }
 h1{
@@ -26,7 +26,7 @@ h1{
   font-weight: 800;
   line-height: 75px;
   letter-spacing: -2.48px;
-  background: var(--rainbow);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 646px;
@@ -38,12 +38,12 @@ h2{
   font-weight: 800;
   line-height: 45px;
   width: 472px;
-  background: var(--rainbow);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .small_div{
   width: 38px;
   height: 3px;
-  background: var(--rainbow)
+  background: var(--gradient)
 }

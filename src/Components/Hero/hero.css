@@ -42,7 +42,7 @@
 }
 
 .get {
-    background-color: var(--red);
+    background-color: var(--button);
     border-radius: 0 5px 5px 0;
     width: 174px;
     height: 73px;

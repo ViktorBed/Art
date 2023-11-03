@@ -62,7 +62,7 @@ h4{
     width: 821px;
     font-weight: 800;
     letter-spacing: -2.48px;
-    background: var(--rainbow);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
