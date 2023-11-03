@@ -6,10 +6,10 @@ export function CTA() {
         <>
             <div className="cta">
                 <div className="cta_left">
-                    <div className="cta_top">Request Early Access to Get Started</div>
-                    <div className="cta_bottom">Register today & start exploring the endless possiblities.</div>
+                    <p className="cta_top">Request Early Access to Get Started</p>
+                    <p className="cta_bottom">Register today & start exploring the endless possiblities.</p>
                 </div>
-                <div className="started">Get Started</div>
+                <nav className="started">Get Started</nav>
             </div>
         </>
     )

@@ -1,0 +1,19 @@
+@media screen and (max-width: 1024px){
+    .hero {
+        scale: 1;
+        flex-direction: column;
+    }
+    .navigation{
+        display: none!important;
+    }
+    .sing{
+        display: none!important;
+    }
+    .gpt_menu{
+        display: flex!important;
+        flex-direction: column;
+        margin-left: 1rem;
+        position: relative;
+        cursor: pointer;
+    }
+}

@@ -9,13 +9,13 @@ import "./logos.css"
 export function Logos() {
     return (
         <>
-            <div className="logos">
+            <section className="logos">
                 <img src={google} alt="google"/>
                 <img src={slack} alt="slack"/>
                 <img src={atlassian} alt="atlassian"/>
                 <img src={dropbox} alt="dropbox"/>
                 <img src={shopify} alt="shopify"/>
-            </div>
+            </section>
         </>
     )
 }

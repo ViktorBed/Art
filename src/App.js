@@ -1,4 +1,7 @@
 import React from "react";
+
+import "./media/media1480-1024.css";
+import "./media/media1024-481.css"
 import {Nav} from "./Components/Nav/Nav";
 import {Hero} from "./Components/Hero/Hero";
 import {Logos} from "./Components/Logos/Logos";
@@ -12,13 +15,14 @@ export function App() {
     return (
         <>
             <Nav/>
-            <Hero/>
+            <div id="hero"><Hero/></div>
             <Logos/>
-            <Gpt/>
-            <Feature/>
+            <div id="gpt"><Gpt/></div>
+            <div id="feature"><Feature/></div>
             <CTA/>
-            <Blog/>
-            <Footer/>
+            <div id="blog"><Blog/></div>
+            <div id="footer"><Footer/></div>
         </>
     )
 }
+

@@ -1,16 +1,18 @@
-.blog{
+.blog {
     display: flex;
-    margin: 120px 135px;
+    margin: 120px 9%;
     flex-direction: column;
     gap: 115px;
 }
-.blog_windows{
+
+.blog_windows {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 50px;
 }
 
-.blog_block{
+.blog_block {
     width: 417px;
     height: 408px;
     background: #042C54;
@@ -19,8 +21,9 @@
     padding: 30px;
     justify-content: space-between;
 }
-.blog_block_small{
-    width: 327px;
+
+.blog_block_small {
+    width: 328px;
     height: 193px;
     background: #042C54;
     display: flex;
@@ -28,22 +31,25 @@
     padding: 25px;
     justify-content: space-between;
 }
-.block_content, .blog_left,.blog_mid,.block_top{
+
+.block_content, .blog_left, .blog_mid, .block_top {
     display: flex;
     flex-direction: column;
 }
-.blog_mid{
+
+.blog_mid {
     gap: 49px;
 }
 
-.time{
+.time {
     color: #FFF;
     font-family: Manrope, serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 700;
 }
-.text{
+
+.text {
     color: #FFF;
     font-family: Manrope, serif;
     font-size: 25px;
@@ -51,3 +57,5 @@
     font-weight: 800;
     line-height: 30px;
 }
+
+

@@ -6,7 +6,7 @@
 }
 :root{
   background: #040C18;
-  scrollbar-color:rgba(255, 255, 255, 0.6) #181818 ;
+  scrollbar-color: var(--rainbow) #181818 ;
   --red: #FF4820;
   --blue: #042C54;
   --rainbow : linear-gradient(103deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;

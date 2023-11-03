@@ -8,28 +8,34 @@ export function Hero() {
     return (
         <>
             <div className="hero">
-                <div className="left_block">
+                <section className="left_block">
                     <h1>Let’s Build Something
                         amazing with GPT-3
                         OpenAI
                     </h1>
-                    <div className="desc">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all
+                    <p className="desc">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all
                         exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we
                         years to order allow asked of.
-                    </div>
+                    </p>
                     <form className="form">
                         <input className="email" placeholder="Your Email Address" type="email"/>
                         <button className="get">
                             Get Started
                         </button>
                     </form>
-                    <div className="signup">
+                    <p className="signup">
                         <img src={people} alt="People" className="people"/>
                         1,600 people requested access a visit in last 24 hours
-                    </div>
-                </div>
+                    </p>
+                </section>
                 <img src={face} alt="Face" className="face"/>
             </div>
+            {/*<div className="blur">*/}
+            {/*    <div className="child1"></div>*/}
+            {/*    <div className="child2"></div>*/}
+            {/*    <div className="child3"></div>*/}
+            {/*    <div className="child4"></div>*/}
+            {/*</div>*/}
         </>
     )
 }

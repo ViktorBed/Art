@@ -14,40 +14,40 @@ export function Blog() {
                 <h1>A lot is happening,
                     We are blogging about it.</h1>
                 <div className="blog_windows">
-                    <div className="blog_left">
+                    <section className="blog_left">
                         <img src={blog1} alt="Code tunel"/>
                         <div className="blog_block">
                             <div className="block_content">
-                                <div className="time">Sep 26, 2021</div>
-                                <div className="text">GPT-3 and Open AI is the future. Let us explore how it is?</div>
+                                <p className="time">Sep 26, 2021</p>
+                                <p className="text">GPT-3 and Open AI is the future. Let us explore how it is?</p>
                             </div>
-                            <div className="time">Read Full Article</div>
+                            <nav className="time">Read Full Article</nav>
                         </div>
-                    </div>
-                    <div className="blog_mid">
+                    </section>
+                    <section className="blog_mid">
                         <div className="block_top">
                             <img src={blog2} alt="Code tunel"/>
                             <div className="blog_block_small">
                                 <div className="block_content_small">
-                                    <div className="time">Sep 26, 2021</div>
-                                    <div className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
-                                    </div>
+                                    <p className="time">Sep 26, 2021</p>
+                                    <p className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
+                                    </p>
                                 </div>
-                                <div className="time">Read Full Article</div>
+                                <nav className="time">Read Full Article</nav>
                             </div>
                         </div>
-                        <div className="block_top">
+                        <section className="block_top">
                             <img src={blog3} alt="Code tunel"/>
                             <div className="blog_block_small">
                                 <div className="block_content">
-                                    <div className="time">Sep 26, 2021</div>
-                                    <div className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
-                                    </div>
+                                    <p className="time">Sep 26, 2021</p>
+                                    <p className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
+                                    </p>
                                 </div>
-                                <div className="time">Read Full Article</div>
+                                <nav className="time">Read Full Article</nav>
                             </div>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
 
                     <div className="blog_mid">
                         <div className="block_top">

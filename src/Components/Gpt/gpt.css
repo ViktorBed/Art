@@ -1,10 +1,9 @@
 .gpt{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: var(--blue);
-    width: 1170px;
-    height: 695px;
-    padding: 60px;
-    margin: 120px 135px;
+    width: 78.6vw;
+    padding: 60px ;
+    margin: 120px 9%;
     gap: 95px;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@
 .gpt_top{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
 }
 .gpt_top_logo{
@@ -31,7 +30,7 @@
     background: var(--blue);
 }
 .gpt_top_text{
-    width: 731px;
+    width: 717px;
     height: 92px;
     flex-shrink: 0;
     color: #81AFDD;
@@ -64,6 +63,7 @@
     flex-direction: row;
     gap: 43px;
     background: var(--blue);
+    justify-content: space-between;
 }
 
 .gpt_lower_block{
@@ -79,7 +79,7 @@
     color: #81AFDD;
     font-family: Manrope, serif;
     font-size: 16px;
-    width: 334px;
+    max-width: 300px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;

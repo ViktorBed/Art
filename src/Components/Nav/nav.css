@@ -5,25 +5,26 @@
     display: flex;
     padding: 35px 135px 0 135px;
 }
-.navigation{
+.navigation,.navigation_menu{
     width: 566px;
     height: 25px;
     display: flex;
     gap: 40px;
 }
-.navigation a, .sing, .but{
+.navigation nav, .sing, .but,.navigation_menu,.sing_menu{
     color: #FFF;
     font-family: Manrope, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
 }
 .logo{
-    width: 62.557px;
-    height: 16.016px;
+    width: 62px;
+    height: 16px;
 }
-.sing{
+.sing,.sing_menu{
     width: 235px;
     height: 58px;
     display: flex;
@@ -36,4 +37,23 @@
     background-color: var(--red);
     border: none;
     border-radius: 5px;
+}
+.gpt_menu{
+    display: none;
+}
+.gpt_menu_open{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--blue);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0, 0,0.2);
 }

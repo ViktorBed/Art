@@ -1,14 +1,16 @@
-.hero{
+.hero {
     display: flex;
+    justify-content: space-evenly;
     margin: 120px 135px;
 }
-.left_block{
+
+.left_block {
     display: flex;
     flex-direction: column;
     gap: 33px;
 }
 
-.desc{
+.desc {
     width: 554px;
     color: #81AFDD;
     font-family: Manrope, serif;
@@ -17,11 +19,13 @@
     font-weight: 400;
     line-height: normal;
 }
-.form{
+
+.form {
     width: 630px;
     height: 73px;
 }
-.email{
+
+.email {
     border-radius: 5px 0 0 5px;
     background: #052D56;
     width: 456px;
@@ -36,7 +40,8 @@
     border: none;
     outline: none;
 }
-.get{
+
+.get {
     background-color: var(--red);
     border-radius: 0 5px 5px 0;
     width: 174px;
@@ -50,8 +55,9 @@
     border: none;
     cursor: pointer;
 }
-.signup{
-display: flex;
+
+.signup {
+    display: flex;
     gap: 14px;
     color: #FFF;
     font-family: Manrope, serif;
@@ -60,13 +66,43 @@ display: flex;
     font-weight: 500;
     line-height: 37px;
 }
-.people{
+
+.people {
     width: 181px;
     height: 38px;
 }
-.face{
+
+.face {
     display: flex;
     margin-top: -100px;
     width: 667px;
     height: 701px;
+}
+.child1 {
+    top: -1330px;
+    left: -350px;
+}
+
+.child2 {
+    top: -963px;
+    right: -704px;
+}
+
+.child3 {
+    right: -704px;
+    top: 464px;
+}
+
+.child4 {
+    left: -348px;
+    top: 905px;
+}
+.blur, .child4, .child3,.child2,.child1{
+    width: 777px;
+    height: 777px;
+    border-radius: 777px;
+    background: #07325F;
+    position: absolute;
+    z-index: -100;
+    filter: blur(70px);
 }
