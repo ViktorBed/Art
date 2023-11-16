@@ -3,3 +3,11 @@
     gap: 47px;
     justify-content: center;
 }
+@media screen and (max-width: 1024px){
+    .logos{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 82.6vw;
+        margin: auto;
+    }
+}

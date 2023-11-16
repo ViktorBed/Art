@@ -74,10 +74,10 @@
 
 .face {
     display: flex;
-    margin-top: -100px;
     width: 667px;
     height: 701px;
 }
+
 .child1 {
     top: -1330px;
     left: -350px;
@@ -97,7 +97,8 @@
     left: -348px;
     top: 905px;
 }
-.blur, .child4, .child3,.child2,.child1{
+
+.blur, .child4, .child3, .child2, .child1 {
     width: 777px;
     height: 777px;
     border-radius: 777px;
@@ -105,4 +106,58 @@
     position: absolute;
     z-index: -100;
     filter: blur(70px);
+}
+
+@media screen and (max-width: 1480px) {
+    .hero {
+        scale: .7;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        scale: 1;
+        flex-direction: column;
+        height: 1400px;
+        align-items: center;
+    }
+    .face{
+        width: 80vw;
+        height: auto;
+    }
+
+    .hero{
+        width: 80vw;
+        justify-content: center;
+        margin: auto;
+    }
+    h1,.desc{
+        width: auto;
+        flex-wrap: wrap;
+        margin: auto;
+        text-align: center;
+    }
+    .form{
+        scale: .8;
+        margin: auto;
+        width: auto;
+    }
+    .email{
+        width: 42vw;
+    }
+}
+@media screen and (max-width: 481px){
+    .hero{
+        width: 80vw;
+    }
+    .email{
+        display: none;
+    }
+    .get{
+        border-radius: 5px;
+    }
+    .signup{
+        flex-direction: column;
+        align-items: center;
+    }
 }

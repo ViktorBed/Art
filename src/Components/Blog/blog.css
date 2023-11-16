@@ -58,4 +58,36 @@
     line-height: 30px;
 }
 
+@media screen and (max-width: 1480px) {
+    .blog {
+        scale: .8;
+        margin: 120px 0;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    .blog_block, .blog_block_small {
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .blog_windows {
+        flex-direction: column ;
+    }
+    .blog{
+        margin: 120px 50px;
+        scale: 1;
+    }
+
+}
+@media screen and (max-width: 481px) {
+    .blog h1{
+        font-size: 34px;
+        line-height: 45px;
+    }
+    .blog_block, .blog_block_small {
+        padding: 20px;
+    }
+}
