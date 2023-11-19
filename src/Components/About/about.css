@@ -1,4 +1,4 @@
-.gpt {
+.about {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: var(--blue);
     width: 82.6vw;
@@ -9,20 +9,20 @@
     flex-direction: column;
 }
 
-.gpt_top_left {
+.about_top_left {
     display: flex;
     flex-direction: column;
     background: var(--blue);
 }
 
-.gpt_top {
+.about_top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
 }
 
-.gpt_top_logo {
+.about_top_logo {
     color: #FFF;
     font-family: Manrope, serif;
     font-size: 24px;
@@ -33,7 +33,7 @@
     background: var(--blue);
 }
 
-.gpt_top_text {
+.about_top_text {
     width: 717px;
     height: 92px;
     flex-shrink: 0;
@@ -46,13 +46,13 @@
     line-height: 30px;
 }
 
-.gpt_mid {
+.about_mid {
     display: flex;
     justify-content: space-between;
     background: var(--blue);
 }
 
-.gpt_mid_link {
+.about_mid_link {
     color: #FF8A71;
     font-family: Manrope, serif;
     font-size: 16px;
@@ -63,7 +63,7 @@
 
 }
 
-.gpt_lower {
+.about_lower {
     display: flex;
     flex-direction: row;
     gap: 43px;
@@ -71,7 +71,7 @@
     justify-content: space-between;
 }
 
-.gpt_lower_block {
+.about_lower_block {
     max-width: 334px;
     gap: 26px;
     display: flex;
@@ -79,7 +79,7 @@
     background: var(--blue);
 }
 
-.gpt_lower_text {
+.about_lower_text {
     color: #81AFDD;
     font-family: Manrope, serif;
     font-size: 16px;
@@ -91,22 +91,22 @@
 }
 
 @media screen and (max-width: 1480px) {
-    .gpt_lower {
+    .about_lower {
         gap: 25px;
     }
 
-    .gpt_lower_text {
+    .about_lower_text {
         max-width: 230px;
     }
 
-    .gpt_top {
+    .about_top {
         align-items: flex-start;
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 1480px) {
-    .gpt_menu {
+    .about_menu {
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
@@ -114,16 +114,16 @@
         cursor: pointer;
     }
 
-    .gpt_top_text {
+    .about_top_text {
         max-width: 320px;
         height: auto;
     }
 
-    .gpt_lower {
+    .about_lower {
         flex-wrap: wrap
     }
 
-    .gpt_mid {
+    .about_mid {
         flex-direction: column;
     }
 
@@ -133,10 +133,10 @@
 
 }
 @media screen and (max-width: 481px){
-    .gpt_top_text{
+    .about_top_text{
         width: auto;
     }
-    .gpt{
+    .about{
         padding: 30px;
     }
 }

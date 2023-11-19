@@ -2,38 +2,6 @@ import React, {useRef} from "react";
 
 import "./nav.css"
 
-// export function Nav() {
-//     const showNavbar = () => {
-//         nav.current.classList.toggle(
-//             "responsive_nav"
-//         );
-//     };
-//     return (
-//         <>
-//             <header className="nav">
-//
-//                     <section className="sing">
-//                         Sign in
-//                         <button type="button"  className="but">Sign up</button>
-//                     </section>
-//                 <button  type="button" onClick={showNavbar} ref={nav} className="gpt_menu">
-//                          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
-//                              <path d="M5 17H19M5 12H19M5 7H19" stroke="white" strokeWidth="2" strokeLinecap="round"
-//                                   strokeLinejoin="round"/>
-//                          </svg>
-//                 </button>
-//                 <button onClick={showNavbar} className="but_show">
-//                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none">
-//                         <path d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-//                     </svg>
-//                 </button>
-//             </header>
-//
-//         </>
-//     )
-// }
-
-
 export function Nav() {
     const handleScroll = (componentName) => {
         const component = document.getElementById(componentName);
