@@ -192,7 +192,8 @@
     .photos {
         position: static;
         justify-content: center;
-        margin: auto;
+        margin: 0 9%;
+        right: 0;
     }
     .photos img{
         width: 70vw;
@@ -222,5 +223,7 @@
     }
     .photos img{
         height: auto;
+        margin: 0 9%;
+        right: 0;
     }
 }

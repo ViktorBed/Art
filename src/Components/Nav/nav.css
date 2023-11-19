@@ -6,14 +6,15 @@
     padding: 35px 135px 0 135px;
 }
 
-.navigation, .navigation_menu {
-    width: 566px;
+.navigation {
     height: 25px;
     display: flex;
     gap: 40px;
+    width: 566px;
+    justify-content: space-between;
 }
 
-.navigation nav, .sing, .but, .navigation_menu, .sing_menu, .butt {
+.navigation nav, .sing, .but, .sing_menu, .butt {
     color: #FFF;
     font-family: Manrope, serif;
     font-size: 18px;
@@ -44,7 +45,7 @@
     border-radius: 5px;
 }
 
-.sing_menu, .navigation_menu {
+.sing_menu{
     scale: 1.2;
     display: flex;
     flex-direction: column;
@@ -78,36 +79,51 @@
     transform: translateY(-1200px);
     animation: out 1s ease forwards;
 }
-.gpt_menu {
-    background: transparent;
-    border: none;
-    display: none !important;
-}
-
-@keyframes out {
-    0% {
-        opacity: 0;
-        transform: translateY(-1200px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.nav_open, .nav_close{
+    display: none;
 }
 @media screen and (max-width: 1480px) {
     .nav {
-        padding: 35px 50px;
+        padding: 50px 50px;
     }
 }
 
 @media screen and (max-width: 1024px){
-    .navigation{
-        display: none;
-    }
     .sing{
         display: none;
     }
-    .gpt_menu{
-        display: flex!important;
+    header .nav_open,.nav_close {
+        display: block;
+        border: none;
+        background: transparent;
+    }
+
+    header .navigation {
+        position: fixed;
+        top: -120vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: .5s ease-in-out;
+        background: var(--gradient);
+        z-index: 500;
+    }
+
+    .nav .responsive_nav {
+        transform: translateY(100vh);
+        transition: 1s ease;
+        background: var(--gradient);
+        z-index: 500;
+    }
+
+    .navigation .nav_open {
+        position: absolute;
+        top: 30px;
+        right: 50px;
     }
 }

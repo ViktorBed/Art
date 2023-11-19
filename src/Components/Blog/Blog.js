@@ -1,81 +1,57 @@
 import React from "react";
 
-import "./blog.css"
 import blog1 from "../../photos/blog1.svg"
 import blog2 from "../../photos/blog2.svg"
 import blog3 from "../../photos/blog3.svg"
 import blog4 from "../../photos/blog4.svg"
 import blog5 from "../../photos/blog5.svg"
+import "./blog.css"
+import {BlogContent} from "./BlogContent";
 
-export function Blog() {
+const BlogData = [
+    {
+        id: 'one',
+        img: blog1,
+        date: 'Sep 26, 2023',
+        text: 'GPT-3 and Open AI is the future. Let us explore how it is?',
+    },
+    {
+        id: 'two',
+        img: blog2,
+        date: 'Aug 17, 2023',
+        text: 'GPT-3 and Open AI is the future. Let us explore how it is?',
+    },
+    {
+        id: 'three',
+        img: blog3,
+        date: 'Sep 12, 2022',
+        text: 'GPT-3 and Open AI is the future. Let us explore how it is?',
+    },
+    {
+        id: 'four',
+        img: blog4,
+        date: 'Feb 30, 2023',
+        text: 'GPT-3 and Open AI is the future. Let us explore how it is?',
+    },
+    {
+        id: 'five',
+        img: blog5,
+        date: 'Mar 26, 2022',
+        text: 'GPT-3 and Open AI is the future. Let us explore how it is?',
+    },
+];
+
+export function Blog({id,date, text, img, arc}) {
     return (
         <>
             <div className="blog">
                 <h1>A lot is happening,
                     We are blogging about it.</h1>
                 <div className="blog_windows">
-                    <section className="blog_left">
-                        <img src={blog1} alt="Code tunel"/>
-                        <div className="blog_block">
-                            <div className="block_content">
-                                <p className="time">Sep 26, 2021</p>
-                                <p className="text">GPT-3 and Open AI is the future. Let us explore how it is?</p>
-                            </div>
-                            <nav className="time">Read Full Article</nav>
-                        </div>
-                    </section>
-                    <section className="blog_mid">
-                        <div className="block_top">
-                            <img src={blog2} alt="Code tunel"/>
-                            <div className="blog_block_small">
-                                <div className="block_content_small">
-                                    <p className="time">Sep 26, 2021</p>
-                                    <p className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
-                                    </p>
-                                </div>
-                                <nav className="time">Read Full Article</nav>
-                            </div>
-                        </div>
-                        <section className="block_top">
-                            <img src={blog3} alt="Code tunel"/>
-                            <div className="blog_block_small">
-                                <div className="block_content">
-                                    <p className="time">Sep 26, 2021</p>
-                                    <p className="text">GPT-3 and Open  AI is the future. Let us explore how it is?
-                                    </p>
-                                </div>
-                                <nav className="time">Read Full Article</nav>
-                            </div>
-                        </section>
-                    </section>
-
-                    <div className="blog_mid">
-                        <div className="block_top">
-                            <img src={blog4} alt="Code tunel"/>
-                            <div className="blog_block_small">
-                                <div className="block_content_small">
-                                    <div className="time">Sep 26, 2021</div>
-                                    <div className="text">GPT-3 and Open AI is the future. Let us explore how it is?
-                                    </div>
-                                </div>
-                                <div className="time">Read Full Article</div>
-                            </div>
-                        </div>
-                        <div className="block_top">
-                            <img src={blog5} alt="Code tunel"/>
-                            <div className="blog_block_small">
-                                <div className="block_content">
-                                    <div className="time">Sep 26, 2021</div>
-                                    <div className="text">GPT-3 and Open AI is the future. Let us explore how it is?
-                                    </div>
-                                </div>
-                                <div className="time">Read Full Article</div>
-                            </div>
-                        </div>
-                    </div>
-
+                        {BlogData.map((item, index) => (
+                            <BlogContent img={item.img} title={item.title} text={item.text} id={item.id}/>
+                        ))}
                 </div>
-
             </div>
         </>
     )

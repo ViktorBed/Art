@@ -4,7 +4,26 @@ import "./feature.css"
 import vr from "../../photos/box.svg"
 import vr2 from "../../photos/Image.svg"
 import vr3 from "../../photos/circle.svg"
+import {Features} from "./ContentFeature";
 
+const featuresData = [
+    {
+        title: 'Improving end distrusts instantly',
+        text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    },
+    {
+        title: 'Become the tended active',
+        text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    },
+    {
+        title: 'Message or am nothing',
+        text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    },
+    {
+        title: 'Really boy law county',
+        text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    },
+];
 export function Feature() {
     return (
         <>
@@ -16,44 +35,10 @@ export function Feature() {
                         <h3 className="feature_link">Request Early Access to Get Started</h3>
                     </div>
                     <div className="feature_mid">
-                        <section className="feature_mid_block">
-                            <div className="feature_mid_block_mid">
-                                <div className="small_div"></div>
-                                <h3 className="feature_text">Improving end distrusts instantly</h3>
-                            </div>
-                            <p className="feature_right_block">From they fine john he give of rich he. They age and
-                                draw mrs like. Improving end distrusts may instantly was household applauded.
-                            </p>
-                        </section>
+                        {featuresData.map((item, index) => (
+                            <Features title={item.title} text={item.text} key={item.title + index} />
+                        ))}
 
-                        <section className="feature_mid_block">
-                            <div className="feature_mid_block_mid">
-                                <div className="small_div"></div>
-                                <h3 className="feature_text">Become the tended active</h3>
-                            </div>
-                            <p className="feature_right_block">Considered sympathize ten uncommonly occasional
-                                assistance sufficient not. Letter of on become he tended active enable to.
-                            </p>
-                        </section>
-                        <section className="feature_mid_block">
-                            <div className="feature_mid_block_mid">
-                                <div className="small_div"></div>
-                                <h3 className="feature_text">Message or am nothing</h3>
-                            </div>
-                            <p className="feature_right_block">Led ask possible mistress relation elegance eat
-                                likewise debating. By message or am nothing amongst chiefly address.
-                            </p>
-                        </section>
-                        <section className="feature_mid_block">
-                            <div className="feature_mid_block_mid">
-                                <div className="small_div"></div>
-                                <h3 className="feature_text">Really boy law county</h3>
-                            </div>
-                            <p className="feature_right_block">Really boy law county she unable her sister. Feet you
-                                off its like like six. Among sex are leave law built now. In built table in an rapid
-                                blush.
-                            </p>
-                        </section>
                     </div>
                 </div>
                 <div className="features">
@@ -76,8 +61,7 @@ export function Feature() {
                         </svg>
                     </nav>
                         <nav className="apps">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
-                                 fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                                 <path fillRule="evenodd" clipRule="evenodd"
                                       d="M11.3333 7.08333H8.5C7.7176 7.08333 7.08333 7.7176 7.08333 8.5V11.3333C7.08333 12.1157 7.7176 12.75 8.5 12.75H11.3333C12.1157 12.75 12.75 12.1157 12.75 11.3333V8.5C12.75 7.7176 12.1157 7.08333 11.3333 7.08333ZM8.5 4.25C6.15279 4.25 4.25 6.15279 4.25 8.5V11.3333C4.25 13.6805 6.15279 15.5833 8.5 15.5833H11.3333C13.6805 15.5833 15.5833 13.6805 15.5833 11.3333V8.5C15.5833 6.15279 13.6805 4.25 11.3333 4.25H8.5Z"
                                       fill="white"/>

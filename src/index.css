@@ -8,7 +8,7 @@
   background: #121212;
   scrollbar-color: var(--gradient) #181818 ;
   --button: #1f6e1a;
-  --blue: #042C54;
+  --blue: rgb(4, 44, 84);
   --gradient : linear-gradient(132deg, rgba(54,238,250,1) 15%, rgba(250,134,55,1) 78%);
 }
 ::-webkit-scrollbar{
