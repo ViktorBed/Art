@@ -1,6 +1,6 @@
 import React from "react";
 
-import blog1 from "../../photos/blog1.svg"
+import blog1 from "../../photos/Sebra.svg"
 import blog2 from "../../photos/blog2.svg"
 import blog3 from "../../photos/blog3.svg"
 import blog4 from "../../photos/blog4.svg"
@@ -49,7 +49,7 @@ export function Blog({id,date, text, img, arc}) {
                     We are blogging about it.</h1>
                 <div className="blog_windows">
                         {BlogData.map((item, index) => (
-                            <BlogContent img={item.img} title={item.title} text={item.text} id={item.id}/>
+                            <BlogContent img={item.img} title={item.title} text={item.text} key={item.id} id={item.id}/>
                         ))}
                 </div>
             </div>

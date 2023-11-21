@@ -49,7 +49,7 @@
 
 .blog_block {
     height: inherit;
-    background: #042C54;
+    background: var(--black);
     display: flex;
     flex-direction: column;
     padding: 30px;

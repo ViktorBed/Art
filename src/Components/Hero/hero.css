@@ -1,23 +1,25 @@
 .hero {
     display: flex;
     justify-content: space-evenly;
-    margin: 120px 135px;
+    margin: 140px 135px 120px 135px;
 }
 
 .left_block {
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    gap: 37px;
 }
 
-.desc {
+.left_block p {
     width: 554px;
-    color: #81AFDD;
+    color: var(--white);
     font-family: Manrope, serif;
+    opacity: .8;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-wrap: wrap;
 }
 
 .form {
@@ -27,10 +29,10 @@
 
 .email {
     border-radius: 5px 0 0 5px;
-    background: #052D56;
+    background: var(--black);
     width: 456px;
     height: 73px;
-    color: #3D6184;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 20px;
     font-style: normal;
@@ -42,11 +44,11 @@
 }
 
 .get {
-    background-color: var(--button);
+    background-color: var(--white);
     border-radius: 0 5px 5px 0;
     width: 174px;
     height: 73px;
-    color: #FFF;
+    color: var(--black);
     font-family: Manrope, serif;
     font-size: 20px;
     font-style: normal;
@@ -59,7 +61,7 @@
 .signup {
     display: flex;
     gap: 14px;
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 12px;
     font-style: normal;
@@ -72,10 +74,15 @@
     height: 38px;
 }
 
-.face {
+#card {
     display: flex;
-    width: 667px;
-    height: 701px;
+    background-image: url("/src/photos/davinci.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform .5s ease;
+    height: 665px;
+    min-width: 500px;
+
 }
 
 .child1 {
@@ -102,7 +109,7 @@
     width: 777px;
     height: 777px;
     border-radius: 777px;
-    background: #07325F;
+    background: var(--white);
     position: absolute;
     z-index: -100;
     filter: blur(70px);
@@ -115,15 +122,21 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .left_block{
+        align-items: center;
+        margin: 120px 0;
+    }
     .hero {
         scale: 1;
         flex-direction: column;
-        height: 1400px;
         align-items: center;
+        height: 1800px;
+
     }
-    .face{
+    #card{
         width: 80vw;
-        height: auto;
+        height: 100vw;
+        min-width: unset;
     }
 
     .hero{
@@ -137,6 +150,9 @@
         margin: auto;
         text-align: center;
     }
+    .left_block p {
+        width: auto;
+    }
     .form{
         scale: .8;
         margin: auto;
@@ -149,6 +165,7 @@
 @media screen and (max-width: 481px){
     .hero{
         width: 80vw;
+        margin-bottom: 0;
     }
     .email{
         display: none;

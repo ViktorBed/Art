@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./feature.css"
 
 export function Features({ title, text }) {

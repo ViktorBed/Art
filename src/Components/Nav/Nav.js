@@ -1,13 +1,14 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 
 import "./nav.css"
 
 export function Nav() {
-    const handleScroll = (componentName) => {
+    const handleClick = (componentName) => {
         const component = document.getElementById(componentName);
         component.scrollIntoView({behavior: 'smooth'});
         showNavbar();
     };
+
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -16,9 +17,29 @@ export function Nav() {
         );
     };
 
+    const [lastScrollTop, setLastScrollTop] = useState(0);
+    const [navbarTop, setNavbarTop] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                setNavbarTop("-120px");
+            } else {
+                setNavbarTop(0);
+            }
+            setLastScrollTop(scrollTop);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScrollTop]);
+
 
     return (
-        <header className="nav">
+        <header className="nav" style={{top: navbarTop}}>
             <section className="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="17" viewBox="0 0 64 17" fill="none">
                     <path
@@ -35,12 +56,12 @@ export function Nav() {
                         fill="white"/>
                 </svg>
             </section>
-            <section className="navigation" ref={navRef}>
-                <nav className="button" onClick={() => handleScroll('hero')}>Home</nav>
-                <nav className="button" onClick={() => handleScroll('gpt')}>What is GPT?</nav>
-                <nav className="button" onClick={() => handleScroll('feature')}>Open AI</nav>
-                <nav className="button" onClick={() => handleScroll('blog')}>Blog</nav>
-                <nav className="button" onClick={() => handleScroll('footer')}>Library</nav>
+            <section className="navigation" ref={navRef} >
+                <nav className="button" onClick={() => handleClick('hero')}>Home</nav>
+                <nav className="button" onClick={() => handleClick('about')}>What is GPT?</nav>
+                <nav className="button" onClick={() => handleClick('feature')}>Open AI</nav>
+                <nav className="button" onClick={() => handleClick('blog')}>Blog</nav>
+                <nav className="button" onClick={() => handleClick('footer')}>Library</nav>
                 <button
                     className="nav_open"
                     onClick={showNavbar}>

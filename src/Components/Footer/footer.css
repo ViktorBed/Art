@@ -1,18 +1,18 @@
 footer {
     width: 100%;
     height: 950px;
-    background: #031B34;
+    background: var(--black);
     gap: 185px;
     display: flex;
     flex-direction: column;
 }
 
 .request {
-    border: 1px solid #FFF;
+    border: 1px solid var(--white);
     width: 218px;
     height: 65px;
     background: transparent;
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 18px;
     font-weight: 400;
@@ -31,7 +31,7 @@ footer {
 }
 
 .footer_text {
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 12px;
     font-weight: 400;
@@ -45,7 +45,7 @@ footer {
 }
 
 h4 {
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 16px;
     font-weight: 400;

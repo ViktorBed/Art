@@ -5,14 +5,17 @@
   scroll-behavior: smooth;
 }
 :root{
-  background: #121212;
-  scrollbar-color: var(--gradient) #181818 ;
+  background: var(--bg);
+  scrollbar-color: var(--gradient) var(--black) ;
+  --bg: #181818;
+  --black: #121212;
   --button: #1f6e1a;
   --blue: rgb(4, 44, 84);
-  --gradient : linear-gradient(132deg, rgba(54,238,250,1) 15%, rgba(250,134,55,1) 78%);
+  --gradient : linear-gradient(132deg, rgba(226,230,245,1) 0%, rgba(198,200,208,1) 47%, rgba(177,179,188,1) 48%, rgba(226,230,245,1) 100%);
+  --white: #E2E6F5;
 }
 ::-webkit-scrollbar{
-  background: #181818;
+  background: var(--black);
   width: .5vw;
 }
 ::-webkit-scrollbar-thumb{

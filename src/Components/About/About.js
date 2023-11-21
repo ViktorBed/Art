@@ -5,18 +5,19 @@ import {AboutContent} from "./AboutContent";
 
 const GptData = [
     {
-        title: 'Chat bots',
-        text: 'We so opinion friends me message as delight. Whole front do of plate heard oh ought.',
+        title: 'Positive',
+        text: 'Art can inspire us to be creative. For example, by reading a book, we can get ideas for our own creative expression.',
     },
     {
-        title: 'Knowledge',
-        text: 'At jointures ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b',
+        title: 'Improvement',
+        text: 'Art can help us change the world. For example, political posters or works of art dedicated to social issues.',
     },
     {
-        title: 'Education',
-        text: 'At jointures ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments.',
+        title: 'Development',
+        text: 'Art can help us better understand ourselves and other people. For example, by reading a book, we can understand how other people feel, think, experience.',
     },
 ];
+
 export function About() {
     return (
         <>
@@ -24,21 +25,21 @@ export function About() {
                 <section className="about_top">
                     <div className="about_top_left">
                         <div className="small_div"></div>
-                        <h3 className="about_top_logo">What is GPT-3</h3>
+                        <h3 className="about_top_logo">What is Art</h3>
                     </div>
-                    <p className="about_top_text">We so opinion friends me message as delight. Whole front do of plate
-                        heard oh ought. His defective nor convinced residence own. Connection has put impossible own
-                        apartments boisterous. At join true ladyship an insisted so humanity he. Friendly bachelor
-                        entrance to on by.
+                    <p className="about_top_text">Art can help us better understand ourselves and other people. For
+                        example, by reading a book, we can understand how other people feel, think, experience. By
+                        watching a movie, we can see the world through other people's eyes. Listening to music, we can
+                        feel their emotions.
                     </p>
                 </section>
                 <section className="about_mid">
-                    <h2 className="about_mid_h2">The possibilities are beyond your imagination</h2>
+                    <h2 className="about_mid_h2">Advantages and bright sides of Art</h2>
                     <p className="about_mid_link">Explore The Library</p>
                 </section>
                 <section className="about_lower">
                     {GptData.map((item, index) => (
-                        <AboutContent title={item.title} text={item.text} key={item.title + index} />
+                        <AboutContent title={item.title} text={item.text} key={item.title + index}/>
                     ))}
                 </section>
             </div>

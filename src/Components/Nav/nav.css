@@ -1,9 +1,16 @@
 .nav {
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    height: 58px;
+    height: 90px;
     display: flex;
-    padding: 35px 135px 0 135px;
+    padding: 35px 135px 35px 135px;
+    z-index: 1000;
+    transition: 1s ease;
+    width: 100vw;
+    background: var(--black);
+    box-shadow: 0 4px 84px 0 rgba(0, 0, 0, 0.20);
+
 }
 
 .navigation {
@@ -15,7 +22,7 @@
 }
 
 .navigation nav, .sing, .but {
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 18px;
     font-style: normal;
@@ -40,7 +47,8 @@
 .but {
     width: 152px;
     height: 58px;
-    background-color: var(--button);
+    color: var(--black);
+    background-color: var(--white);
     border: none;
     border-radius: 5px;
 }

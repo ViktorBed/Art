@@ -1,34 +1,33 @@
 import React from "react";
 
 import "./hero.css"
-import people from "../../photos/people.svg"
-import face from "../../photos/hero.png"
+import {RotateCard} from "./RotateCard";
 
 export function Hero() {
     return (
         <>
             <div className="hero">
                 <section className="left_block">
-                    <h1>Let’s Build Something
-                        amazing with GPT-3
-                        OpenAI
+                    <h1>We are glad to see you on our site about art and paintings
                     </h1>
-                    <p className="desc">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all
-                        exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we
-                        years to order allow asked of.
+                    <p>
+                        We are pleased to welcome you to our website dedicated to art. Here you will find everything you
+                        are interested in about paintings.
                     </p>
+                    <p> We also offer information about art, including artist stories, painting techniques and other
+                        interesting facts.
+                    </p>
+                    <p> We hope that our site will be a source of inspiration and new knowledge about art for you.
+                    </p>
+
                     <form className="form">
                         <input className="email" placeholder="Your Email Address" type="email"/>
                         <button className="get">
                             Get Started
                         </button>
                     </form>
-                    <p className="signup">
-                        <img src={people} alt="People" className="people"/>
-                        1,600 people requested access a visit in last 24 hours
-                    </p>
                 </section>
-                <img src={face} alt="Face" className="face"/>
+                <RotateCard/>
             </div>
             {/*<div className="blur">*/}
             {/*    <div className="child1"></div>*/}

@@ -1,18 +1,29 @@
 .about {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background: var(--blue);
+    filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.25));
+    background-image: url("/src/photos/rectangle.svg");
     width: 82.6vw;
     padding: 60px;
     margin: 120px 9%;
     gap: 95px;
     display: flex;
     flex-direction: column;
+    background-position: center;
+    transition: background-image 1.5s ease-out;
 }
+
+.about:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/src/photos/garl.png");
+    transition: background-image .5s ease;
+    border-radius: 1px;
+}
+
 
 .about_top_left {
     display: flex;
     flex-direction: column;
-    background: var(--blue);
 }
 
 .about_top {
@@ -23,43 +34,40 @@
 }
 
 .about_top_logo {
-    color: #FFF;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
     line-height: 75px;
     letter-spacing: -0.96px;
-    background: var(--blue);
 }
 
 .about_top_text {
     width: 717px;
     height: 92px;
     flex-shrink: 0;
-    color: #81AFDD;
+    color: var(--white);
+    opacity: .8;
     font-family: Manrope, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    background: var(--blue);
     line-height: 30px;
 }
 
 .about_mid {
     display: flex;
     justify-content: space-between;
-    background: var(--blue);
 }
 
 .about_mid_link {
-    color: #FF8A71;
+    color: var(--white);
     font-family: Manrope, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    background: var(--blue);
 
 }
 
@@ -67,7 +75,6 @@
     display: flex;
     flex-direction: row;
     gap: 43px;
-    background: var(--blue);
     justify-content: space-between;
 }
 
@@ -76,18 +83,17 @@
     gap: 26px;
     display: flex;
     flex-direction: column;
-    background: var(--blue);
 }
 
 .about_lower_text {
-    color: #81AFDD;
+    color: var(--white);
+    opacity: .8;
     font-family: Manrope, serif;
     font-size: 16px;
     max-width: 300px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    background: var(--blue);
 }
 
 @media screen and (max-width: 1480px) {
@@ -132,11 +138,13 @@
     }
 
 }
-@media screen and (max-width: 481px){
-    .about_top_text{
+
+@media screen and (max-width: 481px) {
+    .about_top_text {
         width: auto;
     }
-    .about{
+
+    .about {
         padding: 30px;
     }
 }
