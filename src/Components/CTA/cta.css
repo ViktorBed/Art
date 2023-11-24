@@ -58,3 +58,10 @@
         gap: 20px;
     }
 }
+@media screen and (max-width: 481px){
+    .cta{
+        width: 92vw;
+        margin: 120px 4vw;
+    }
+}
+

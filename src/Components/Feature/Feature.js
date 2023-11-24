@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./feature.css"
-import paint from "../../photos/57 1 (2).png"
+import paint from "../../photos/mahoning.svg"
 import {Features} from "./ContentFeature";
 
 const featuresData = [

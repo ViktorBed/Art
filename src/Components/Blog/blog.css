@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
+    gap: 35px;
     justify-content: space-between;
 }
 
@@ -78,7 +79,7 @@
     .blog_windows {
         width: 260px;
         justify-content: center;
-        grid-template-rows: minmax(300px, 1fr);
+        grid-template-rows: minmax(335px, 1fr);
         grid-row-gap: 45px;
     }
     .blog{
@@ -95,7 +96,7 @@
     #one {
         grid-column: 1;
         grid-row: 1 / 2;
-        height: 414.5px;
+        height: 483.5px;
     }
 
     #two {
@@ -125,6 +126,7 @@
         width: 100%;
         height: auto;
         padding: 50px;
+        gap: 35px;
         box-sizing: border-box;
     }
 
@@ -181,11 +183,15 @@
 
     }
     #one, #two, #three, #four, #five, #one img, #two img, #three img, #four img, #five img  {
-        width: 82vw;
+        width: 92vw;
         height: auto;
     }
 
     .blog_block{
         padding: 20px;
+    }
+    .blog{
+        width: 92vw;
+        margin: 120px 4vw;
     }
 }
