@@ -1,8 +1,11 @@
-export function Modal(active, setActive) {
+import "./modal.css"
+export function Modal({active, setActive, children}) {
     return (
         <>
-            <div className="modal">
-                <div className="content"></div>
+            <div className={active ? "modal active" : "modal"} onClick={() =>setActive(false)}>
+                <div className={active ? "content active" : "content"} onClick={e => e.stopPropagation()}>
+                    {children}
+                </div>
             </div>
         </>
     )

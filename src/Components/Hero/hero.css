@@ -56,6 +56,11 @@
     line-height: normal;
     border: none;
     cursor: pointer;
+    transform: scale(1);
+    transition: .5s ease;
+}
+.get:hover{
+    transform: scale(1.1);
 }
 
 .signup {

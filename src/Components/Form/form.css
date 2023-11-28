@@ -1,0 +1,74 @@
+.register{
+    color: var(--black);
+    font-family: Manrope, serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+    text-align: center;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input{
+    padding: 15px;
+    font-family: Manrope, serif;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    font-weight: 400;
+}
+
+
+label{
+    font-family: Manrope, serif;
+    font-size: 12px;
+    color: var(--black);
+    font-weight: 400;
+
+}
+
+span{
+    font-size: 12px;
+    color: var(--error);
+    display: none;
+    font-family: Manrope, serif;
+    font-weight: 600;
+
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid var(--error);
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+.submit{
+    transform: scale(1);
+    transition: .5s ease;
+    width: 500px;
+    height: 50px;
+    font-family: Manrope, serif;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.submit:hover{
+    transform: scale(1.1);
+}
+@media  screen and (max-width: 1024px){
+    .formInput,.submit{
+        width: 70vw;
+    }
+}

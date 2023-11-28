@@ -9,7 +9,7 @@ import {Blog} from "./Components/Blog/Blog";
 import {Footer} from "./Components/Footer/Footer";
 
 export function App() {
-    console.log("rerender");
+    // console.log("rerender");
 
     return (
         <>
@@ -20,6 +20,7 @@ export function App() {
             <CTA/>
             <div id="blog"><Blog/></div>
             <div id="footer"><Footer/></div>
+
         </>
     )
 }

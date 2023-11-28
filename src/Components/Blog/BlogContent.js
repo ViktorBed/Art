@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export function BlogContent({id, date, text, img}) {
+export function BlogContent({id, date, text, img, full}) {
     return (
         <>
             <div id={id}>
@@ -13,6 +13,7 @@ export function BlogContent({id, date, text, img}) {
                         </p>
                     </div>
                     <nav className="time">Read Full Article</nav>
+                    <section className="back">{full}</section>
                 </div>
             </div>
         </>
