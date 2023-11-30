@@ -62,10 +62,12 @@
     transform-style: preserve-3d;
     backface-visibility: hidden;
 }
-.blog_block:hover{
+
+.blog_block:hover {
     transform: rotateY(180deg);
 }
-.back{
+
+.back {
     transform: rotateY(180deg);
     background-color: var(--black);
     position: absolute;
@@ -81,9 +83,10 @@
     color: var(--white);
 }
 
-.back:hover{
+.back:hover {
     animation-duration: 12s;
 }
+
 .time {
     color: #FFF;
     font-family: Manrope, serif;
@@ -100,12 +103,14 @@
     font-weight: 800;
     line-height: 30px;
 }
-.blog_windows img:hover{
+
+.blog_windows img:hover {
     transform: translateY(-20px);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 84px 0 var(--white);
 }
-.blog_windows img{
+
+.blog_windows img {
     transform: translateY(0px);
     transition: 1s all;
     width: 100%;
@@ -182,6 +187,7 @@
     #one, #one img, #two, #three, #four, #five {
         width: 328px;
         height: auto;
+
     }
 
     #one {

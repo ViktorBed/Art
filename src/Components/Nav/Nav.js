@@ -49,7 +49,7 @@ export function Nav() {
         <>
             <header className="nav" style={{top: navbarTop}}>
                 <section className="logo">
-                    <svg width="64" height="17" viewBox="0 0 629 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="75" height="20" viewBox="0 0 629 323" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M485.933 1.26647C485.4 1.66647 485 61.2666 485 133.533C485 277.4 484.733 271.267 493 286.867C498.467 297 512.333 310.333 522.6 315.267C536.6 322.067 543.533 323 585.933 323C619.8 323 625.133 322.733 627 320.867C628.067 319.667 628.733 317.667 628.467 316.467C628.067 315.267 626.6 309.267 625.267 303C622.2 289.4 620.6 285.933 616.067 284.2C614.067 283.533 600.067 283 584.467 283C568.867 283.133 554.333 282.6 551.933 281.8C544.067 279.4 535.8 273.8 531.8 267.933C523.667 256.067 523.667 255.667 523.667 169.4V90.9999H554.2C591.133 90.9999 589.267 91.7999 593.8 73.5332C599.667 49.9332 601.133 50.8666 557.533 51.1332L524.333 51.2666L523.933 28.8666C523.533 -0.466805 524.067 0.333195 502.333 0.333195C493.8 0.333195 486.333 0.733195 485.933 1.26647Z"
                             fill="white"/>
@@ -62,11 +62,13 @@ export function Nav() {
                     </svg>
                 </section>
                 <section className="navigation" ref={navRef}>
-                    <nav className="button" onClick={() => handleClick('hero')}>Home</nav>
-                    <nav className="button" onClick={() => handleClick('about')}>What is GPT?</nav>
-                    <nav className="button" onClick={() => handleClick('feature')}>Open AI</nav>
-                    <nav className="button" onClick={() => handleClick('blog')}>Blog</nav>
-                    <nav className="button" onClick={() => handleClick('footer')}>Library</nav>
+                    <div className="links">
+                        <nav onClick={() => handleClick('hero')}>Home</nav>
+                        <nav onClick={() => handleClick('about')}>What is Art?</nav>
+                        <nav onClick={() => handleClick('feature')}>Important</nav>
+                        <nav onClick={() => handleClick('blog')}>Paintings</nav>
+                        <nav onClick={() => handleClick('footer')}>Library</nav>
+                    </div>
                     <button
                         className="nav_open"
                         onClick={showNavbar}>
@@ -75,8 +77,10 @@ export function Nav() {
                                   strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </button>
+                    <div>
+                        <button onClick={handleModule} type="button" className="but">Sign up</button>
+                    </div>
                 </section>
-                    <button  onClick={handleModule} type="button" className="but">Sign up</button>
                 <button
                     className="nav_close"
                     onClick={showNavbar}>

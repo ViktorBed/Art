@@ -7,7 +7,7 @@
 :root{
   background: var(--bg);
   scrollbar-color: var(--gradient) var(--black) ;
-  --gradient : linear-gradient(132deg, rgba(226,230,245,1) 0%, rgba(198,200,208,1) 47%, rgba(177,179,188,1) 48%, rgba(226,230,245,1) 100%);
+  --gradient :linear-gradient(132deg, rgba(226,230,245,1) 31%, rgba(172,173,173,1) 50%, rgba(217,220,228,1) 66%);
   --bg: #181818;
   --black: #121212;
   --error: #9f0404;
