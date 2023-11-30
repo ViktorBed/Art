@@ -85,14 +85,13 @@
         justify-content: center;
         gap: 20px;
         transition: .5s ease-in-out;
-        background: var(--gradient);
         z-index: 500;
     }
 
     .nav .responsive_nav {
         transform: translateY(120vh);
         transition: 1s ease;
-        background: var(--gradient);
+        background: var(--bg);
         z-index: 500;
     }
 
@@ -100,5 +99,16 @@
         position: absolute;
         top: 30px;
         right: 50px;
+    }
+    section nav{
+        width: 300px;
+        text-align: center;
+        border-radius: 50px;
+        padding: 7px;
+        box-sizing: border-box;
+        transition: .3s ease;
+    }
+    section nav:hover{
+        background-color: var(--black);
     }
 }

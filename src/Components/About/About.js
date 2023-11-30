@@ -35,7 +35,7 @@ export function About() {
                 </section>
                 <section className="about_mid">
                     <h2 className="about_mid_h2">Advantages and bright sides of Art</h2>
-                    <p className="about_mid_link">Explore The Library</p>
+                    <p className="about_mid_link">Guernica by Pablo Picasso</p>
                 </section>
                 <section className="about_lower">
                     {GptData.map((item, index) => (

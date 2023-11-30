@@ -1,47 +1,79 @@
-import React from "react";
+import React, {useState} from "react";
 
 import "./footer.css"
+import {SingUp} from "../Form/SingUp";
+import {Modal} from "../Modal Window/Modal";
+
 
 export function Footer() {
+    const [modalActive, setModalActive] = useState(false)
+
+    const handleModule = () => {
+        setModalActive(true)
+    }
+
+const [secondModalActive, setSecondModalActive] = useState(false)
+    const handleSecondModule = () => {
+        setSecondModalActive(true)
+        navigator.clipboard.writeText(phone);
+
+    }
+
+    const phone = "067 - 3495092"
+    const handleCopy = () => {
+    };
     return (
         <>
             <footer>
                 <section className="footer_top">
-                    <h4 className="footer_h">Do you want to step in to the future before others</h4>
-                    <button type="button" className="request">Request Early Access</button>
+                    <h4 className="footer_h">Do you want to study art<br/> Join today</h4>
+                    <button onClick={handleModule} type="button" className="request">Register & explore art</button>
                 </section>
                 <section className="footer_blocks">
                     <nav className="logo_block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="118" height="30" viewBox="0 0 118 30" fill="none">
-                        <path d="M30.003 13.3516V15.8242C30.003 20.1374 28.6474 23.5852 25.9362 26.1676C23.2527 28.7225 19.836 30 15.6862 30C11.1768 30 7.42813 28.5577 4.44028 25.6731C1.48009 22.7885 0 19.2445 0 15.0412C0 10.8379 1.46626 7.28022 4.39878 4.36813C7.35897 1.45604 10.9693 0 15.2297 0C17.9409 0 20.417 0.604396 22.6579 1.81319C24.9264 3.02198 26.6832 4.61538 27.9281 6.59341L22.2844 9.80769C21.6481 8.81868 20.6936 8.00824 19.421 7.37637C18.1761 6.74451 16.7652 6.42857 15.1882 6.42857C12.726 6.42857 10.6788 7.23901 9.04655 8.85989C7.44196 10.4808 6.63967 12.5549 6.63967 15.0824C6.63967 17.5824 7.46963 19.6291 9.12954 21.2225C10.7895 22.7885 13.0027 23.5714 15.7692 23.5714C19.6147 23.5714 22.0907 22.0879 23.1973 19.1209H15.4372V13.3516H30.003Z" fill="white"/>
-                        <path d="M44.7432 0.576923C47.5927 0.576923 49.9996 1.53846 51.9638 3.46154C53.9281 5.38462 54.9102 7.71978 54.9102 10.467C54.9102 13.2143 53.9281 15.5495 51.9638 17.4725C49.9996 19.3956 47.5927 20.3571 44.7432 20.3571H40.3859V29.4231H33.7462V0.576923H44.7432ZM44.7432 14.1758C45.7668 14.1758 46.6106 13.8187 47.2746 13.1044C47.9385 12.3901 48.2705 11.511 48.2705 10.467C48.2705 9.42308 47.9385 8.54396 47.2746 7.82967C46.6106 7.11539 45.7668 6.75824 44.7432 6.75824H40.3859V14.1758H44.7432Z" fill="white"/>
-                        <path d="M77.3223 0.576923V6.92308H69.8527V29.4231H63.213V6.92308H55.7434V0.576923H77.3223Z" fill="white"/>
-                        <path d="M78.162 20.0687V14.1346H93.9312V20.0687H78.162Z" fill="white"/>
-                        <path d="M111.817 12.2802C113.67 12.9121 115.164 13.9423 116.299 15.3709C117.433 16.772 118 18.4341 118 20.3571C118 23.3791 116.976 25.7418 114.929 27.4451C112.882 29.1484 110.378 30 107.418 30C105.122 30 103.061 29.478 101.235 28.4341C99.4366 27.3901 98.1087 25.8516 97.251 23.8187L102.978 20.522C103.697 22.5549 105.177 23.5714 107.418 23.5714C108.718 23.5714 109.7 23.2692 110.364 22.6648C111.028 22.0604 111.36 21.2912 111.36 20.3571C111.36 19.4231 111.028 18.6538 110.364 18.0494C109.7 17.4451 108.718 17.1429 107.418 17.1429H106.049L103.517 13.3929L108.787 6.75824H98.164V0.576923H116.838V5.93406L111.817 12.2802Z" fill="white"/>
-                    </svg>
-                        <p className="footer_text">Creditworthy K12 182 DK Alkaline, All Rights Reserved</p>
+                        <svg width="118" height="30" viewBox="0 0 629 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M485.933 1.26647C485.4 1.66647 485 61.2666 485 133.533C485 277.4 484.733 271.267 493 286.867C498.467 297 512.333 310.333 522.6 315.267C536.6 322.067 543.533 323 585.933 323C619.8 323 625.133 322.733 627 320.867C628.067 319.667 628.733 317.667 628.467 316.467C628.067 315.267 626.6 309.267 625.267 303C622.2 289.4 620.6 285.933 616.067 284.2C614.067 283.533 600.067 283 584.467 283C568.867 283.133 554.333 282.6 551.933 281.8C544.067 279.4 535.8 273.8 531.8 267.933C523.667 256.067 523.667 255.667 523.667 169.4V90.9999H554.2C591.133 90.9999 589.267 91.7999 593.8 73.5332C599.667 49.9332 601.133 50.8666 557.533 51.1332L524.333 51.2666L523.933 28.8666C523.533 -0.466805 524.067 0.333195 502.333 0.333195C493.8 0.333195 486.333 0.733195 485.933 1.26647Z"
+                                fill="white"/>
+                            <path
+                                d="M119.133 53.9333C115.8 56.9999 103.667 82.0666 103.667 85.9333C103.667 90.0666 107.267 90.7333 131 91.2661C154.067 91.6661 155.267 91.8001 161.8 95.2661C169.933 99.5331 179.8 109 185.667 118.333C188.067 121.933 208.733 167 231.667 218.333C254.6 269.667 274.2 313.267 275.4 315.267C278.867 321.133 281.933 321.667 311 321.667H338.067L342.2 318.2L346.2 314.867L346.6 218.6L347 122.333L350.067 115.533C353.933 107 362.333 98.7331 371 94.7331C377.267 91.8001 379.667 91.6661 414.733 90.9999C448.733 90.3333 452.067 90.0666 453.667 87.9333C454.6 86.5999 457 78.7333 458.867 70.5999L462.467 55.6666L459.533 53.3999C457 51.1333 453 50.9999 412.467 51.3999C375.267 51.7999 367.133 52.1999 360.467 54.1999C338.867 60.5999 322.467 73.7999 313.267 92.2001L308.333 102.2L307.667 195.4L307 288.6L287.4 244.866C276.6 220.733 261.933 188.066 254.867 172.333C247.8 156.6 237.533 133.8 232.2 121.666C205.933 63.2666 190.733 51.6666 139.667 51.1333C123.667 50.8666 122.467 51.1333 119.133 53.9333Z"
+                                fill="white"/>
+                            <path
+                                d="M79 174.067C67.5333 178.6 58.3333 187.134 52.6 198.6C50.7333 202.067 38.0666 230.2 24.3333 261C5.80001 302.467 -0.333387 317.4 0.733313 319C1.66661 320.6 5.26661 321.134 17.4 321.4C41.4 321.934 39.2666 323.934 55.6666 286.867C83.4 223.667 86.733 217.8 96.2 213.534C101.267 211.267 105.667 211 150.333 211C200.067 211 202.333 210.734 202.333 206.067C202.333 203 189 175.8 186.733 173.934C183.667 171.667 84.867 171.8 79 174.067Z"
+                                fill="white"/>
+                        </svg>
+                        <p className="footer_text">Based in Lviv, Ukraine, All Rights Reserved</p>
                     </nav>
                     <nav className="text_block">
                         <h4>Links</h4>
-                        <p className="footer_text">Overruns</p>
-                        <p className="footer_text">Social Media</p>
-                        <p className="footer_text">Counters</p>
-                        <p className="footer_text">Contact</p>
+                        <a href="https://www.google.com.ua/?hl=uk" className="footer_text">Source</a>
+                        <a href="https://t.me/miktorrrrr" className="footer_text">Social Media</a>
+                        <a href="https://www.linkedin.com/in/viktor-bednarski-8a5b2a207/"
+                           className="footer_text">Contact</a>
                     </nav>
                     <nav className="text_block">
                         <h4>Company</h4>
-                        <p className="footer_text">Terms & Conditions</p>
-                        <p className="footer_text">Privacy Policy</p>
-                        <p className="footer_text">Contact</p>
+                        <a href="https://creativecommons.org/share-your-work/use-remix/" className="footer_text">Terms &
+                            Conditions</a>
+                        <a href="https://creativecommons.org/share-your-work/cclicenses/" className="footer_text">Privacy
+                            Policy</a>
+                        <a href="https://github.com/ViktorBed" className="footer_text">Contact</a>
                     </nav>
                     <nav className="text_block">
                         <h4>Get in touch</h4>
-                        <p className="footer_text">Creditworthy K12 182 DK Alkaline</p>
-                        <p className="footer_text">085-132567</p>
-                        <p className="footer_text">info@payme.net</p>
+                        <a href="https://www.google.com/maps/place/Львів,+Львівська+область,+79000/@49.832689,24.0122355,12z/data=!3m1!4b1!4m6!3m5!1s0x473add7c09109a57:0x4223c517012378e2!8m2!3d49.839683!4d24.029717!16zL20vMGQ3X24?entry=ttu"
+                           className="footer_text">Lviv, Ukraine</a>
+                        <p onClick={handleSecondModule}  className="footer_text">{phone}</p>
+                        <a href="mailto:vbednarskii@gmail.com" className="footer_text">vbednarskii@gmail</a>
                     </nav>
                 </section>
             </footer>
+            <Modal active={modalActive} setActive={setModalActive}>
+                <SingUp/>
+            </Modal>
+            <Modal active={secondModalActive} setActive={setSecondModalActive}>
+                <h3 className="h3">Copied</h3>
+            </Modal>
         </>
     )
 }

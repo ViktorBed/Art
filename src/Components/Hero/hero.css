@@ -43,7 +43,7 @@
     outline: none;
 }
 
-.get {
+.get{
     background-color: var(--white);
     border-radius: 0 5px 5px 0;
     width: 174px;
@@ -58,9 +58,19 @@
     cursor: pointer;
     transform: scale(1);
     transition: .5s ease;
+    text-align: center;
 }
 .get:hover{
     transform: scale(1.1);
+}
+.h3{
+    color: var(--black);
+    font-family: Manrope, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
 }
 
 .signup {

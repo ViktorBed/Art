@@ -45,8 +45,7 @@ export function Blog({id,date, text, img, arc}) {
     return (
         <>
             <div className="blog">
-                <h1>A lot is happening,
-                    We are blogging about it.</h1>
+                <h1>Known works of outstanding artists</h1>
                 <div className="blog_windows">
                         {BlogData.map((item, index) => (
                             <BlogContent img={item.img} title={item.title} text={item.text} full={item.full} key={item.id} id={item.id}/>
