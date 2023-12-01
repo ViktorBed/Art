@@ -27,6 +27,7 @@
     align-items: center;
 }
 
+
 .navigation nav, .sing, .but {
     color: var(--white);
     font-family: Manrope, serif;
@@ -61,6 +62,7 @@
 
 .nav_open, .nav_close {
     display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1480px) {
@@ -90,6 +92,9 @@
         transition: .5s ease-in-out;
         z-index: 500;
     }
+    .nav{
+    padding: 20px;
+        }
 
     .nav .responsive_nav {
         transform: translateY(120vh);
@@ -97,6 +102,7 @@
         background: var(--bg);
         z-index: 500;
         display: flex;
+        overflow: hidden;
         flex-direction: column;
     }
 

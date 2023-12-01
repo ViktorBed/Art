@@ -75,3 +75,9 @@ input:invalid[focused="true"] ~ span {
         width: 70vw;
     }
 }
+@media screen and (max-width: 481px){
+    .register{
+        justify-content: space-around;
+        text-align: left;
+    }
+}

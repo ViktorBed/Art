@@ -1,5 +1,4 @@
 .about {
-    filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.25));
     background-image: url("/src/photos/rectangle.svg");
     width: 82.6vw;
     padding: 60px;
@@ -8,16 +7,15 @@
     display: flex;
     flex-direction: column;
     background-position: center;
-    transition: background-image 1.5s ease-out;
+    transition: background-image .5s ease-out;
+    background-size: cover;
 }
 
 .about:hover {
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-image: url("/src/photos/garl.png");
     transition: background-image .5s ease;
-    border-radius: 1px;
 }
 
 
@@ -146,6 +144,14 @@
         padding: 30px;
         width: 92vw;
         margin: 0 4vw;
+    }
+    .about:hover{
+        background-image: url("/src/photos/rectangle.svg");
+        flex-direction: column;
+        background-position: center;
+    }
+    .about_mid_link{
+        display: none;
     }
 
     .about_lower_text, .about_lower_block, .about_top_text {

@@ -10,15 +10,20 @@ export function Nav() {
         component.scrollIntoView({behavior: 'smooth'});
         showNavbar();
     };
-
     const navRef = useRef();
 
     const showNavbar = () => {
-        navRef.current.classList.toggle(
-            "responsive_nav"
-        );
-    };
-
+        navRef.current.classList.toggle("responsive_nav");
+        if (navRef.current.classList.toggle("responsive_nav")){
+            document.body.style.overflow = "auto";
+        }if(navRef.current.classList.toggle("responsive_nav")) {
+            document.body.style.overflow = "clip";
+        }
+    }
+    const [modalActive, setModalActive] = useState(false)
+    const handleModule = () => {
+        setModalActive(true)
+    }
 
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [navbarTop, setNavbarTop] = useState(0);
@@ -27,7 +32,7 @@ export function Nav() {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             if (scrollTop > lastScrollTop) {
-                setNavbarTop("-120px");
+                setNavbarTop("- 120px");
             } else {
                 setNavbarTop(0);
             }
@@ -40,11 +45,6 @@ export function Nav() {
         };
     }, [lastScrollTop]);
 
-    const [modalActive, setModalActive] = useState(false)
-
-    const handleModule = () => {
-        setModalActive(true)
-    }
     return (
         <>
             <header className="nav" style={{top: navbarTop}}>
@@ -92,9 +92,7 @@ export function Nav() {
                 <Modal active={modalActive} setActive={setModalActive}>
                     <SingUp/>
                 </Modal>
-
             </header>
         </>
-    )
-        ;
+    );
 }

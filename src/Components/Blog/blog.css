@@ -114,7 +114,7 @@
     transform: translateY(0px);
     transition: 1s all;
     width: 100%;
-    z-index: 500;
+    background: var(--black);
 }
 
 @media screen and (max-width: 1480px) {

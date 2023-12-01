@@ -149,7 +149,9 @@
         flex-direction: column;
         align-items: center;
         height: 1800px;
-
+        width: 80vw;
+        justify-content: center;
+        margin: auto;
     }
 
     #card {
@@ -158,11 +160,6 @@
         min-width: unset;
     }
 
-    .hero {
-        width: 80vw;
-        justify-content: center;
-        margin: auto;
-    }
 
     h1, .desc {
         width: auto;
@@ -190,14 +187,12 @@
     .hero {
         width: 92vw;
         margin-bottom: 0;
+        height: auto;
     }
 
-    .email {
-        display: none;
-    }
-
-    .get {
+    .get, .email {
         border-radius: 5px;
+        width: 92vw;
     }
 
     .signup {

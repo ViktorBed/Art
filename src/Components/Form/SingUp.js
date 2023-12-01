@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 
 import {Form} from "./Form";
 import "./form.css"
@@ -37,9 +37,9 @@ export function SingUp() {
             name: "password",
             type: "password",
             placeholder: "Password",
-            errorMessage: "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character",
+            errorMessage: "Password should be 8-26 characters and include at least 1 letter and 1 number",
             label: "Password",
-            pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+            pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,26}$`,
             required: true,
         },
         {
@@ -67,10 +67,13 @@ export function SingUp() {
     };
 
 
+
     return (
         <div className="app">
             <form onSubmit={handleSubmit}>
-                <div className="register">Register</div>
+                <div className="register">Register
+                    </div>
+
                 {inputs.map((input) => (
                     <Form
                         key={input.id}
