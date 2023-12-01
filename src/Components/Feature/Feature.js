@@ -22,34 +22,29 @@ const featuresData = [
         text: 'For example, artwork created by members of marginalized groups has helped them tell their stories and find their place in society.',
     },
 ];
-
 export function Feature() {
     return (
         <>
             <div className="feature">
                 <section className="feature_blocks">
                     <div className="feature_left">
-                        <h2>In a rapidly changing world, art is becoming more and more important. It can help us
-                            understand the complex problems we face and find ways to solve them.</h2>
-                        <h3 className="feature_link">Here are some concrete examples of how art can change the
-                            world</h3>
+                        <h2>In a rapidly changing world, art is becoming more and more important. It can help us understand the complex problems we face and find ways to solve them.</h2>
+                        <h3 className="feature_link">Here are some concrete examples of how art can change the world</h3>
                     </div>
                     <div className="feature_mid">
                         {featuresData.map((item, index) => (
-                            <Features title={item.title} text={item.text} key={item.title + index}/>
+                            <Features title={item.title} text={item.text} key={item.title + index} />
                         ))}
 
                     </div>
                 </section>
                 <section className="features">
-                    <div className="photos">
-                        <img src={paint} alt="Franz Kline | Mahoning | Whitney Museum of American Art"/>
-                    </div>
+                       <div className="photos">
+                           <img src={paint} alt="Franz Kline | Mahoning | Whitney Museum of American Art"/>
+                       </div>
                     <div className="left_down">
                         <h2>Art has become an integral part of the modern world.</h2>
-                        <h3 className="left_text">In today's world, art has access to a larger audience than ever
-                            before. Technologies such as the Internet and social media have made art more accessible and
-                            accessible to all. This led to a growing interest in art and its role in society.</h3>
+                            <h3 className="left_text">In today's world, art has access to a larger audience than ever before. Technologies such as the Internet and social media have made art more accessible and accessible to all. This led to a growing interest in art and its role in society.</h3>
                         <nav className="explore">Mahoning by Franz Kline</nav>
                     </div>
                 </section>

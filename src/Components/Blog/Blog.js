@@ -3,7 +3,7 @@ import React from "react";
 import Sebra from "../../photos/Sebra.svg"
 import Charrette from "../../photos/Charrette.svg"
 import House from "../../photos/house.svg"
-import Ascendic from "../../photos/Ascendic.png"
+import Ascendic from "../../photos/ascending.png"
 import Marige from "../../photos/marige.svg"
 import "./blog.css"
 import {BlogContent} from "./BlogContent";
