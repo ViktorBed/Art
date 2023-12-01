@@ -1,51 +1,57 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
-:root{
-  background: var(--bg);
-  scrollbar-color: var(--gradient) var(--black) ;
-  --gradient :linear-gradient(132deg, rgba(226,230,245,1) 31%, rgba(172,173,173,1) 50%, rgba(217,220,228,1) 66%);
-  --bg: #181818;
-  --black: #121212;
-  --error: #9f0404;
-  --white: #E2E6F5;
+
+:root {
+    background: var(--bg);
+    scrollbar-color: var(--gradient) var(--black);
+    --gradient: linear-gradient(132deg, rgba(226, 230, 245, 1) 31%, rgba(172, 173, 173, 1) 50%, rgba(217, 220, 228, 1) 66%);
+    --bg: #181818;
+    --black: #121212;
+    --error: #9f0404;
+    --white: #E2E6F5;
 }
-::-webkit-scrollbar{
-  background: var(--black);
-  width: .5vw;
+
+::-webkit-scrollbar {
+    background: var(--black);
+    width: .5vw;
 }
-::-webkit-scrollbar-thumb{
-  background:  var(--gradient);
-  border-radius: 12px;
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 12px;
 }
-h1{
-  font-family: Manrope, serif;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 75px;
-  letter-spacing: -2.48px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 646px;
+
+h1 {
+    font-family: Manrope, serif;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -2.48px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 646px;
 }
-h2{
-  font-family: Manrope, serif;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 45px;
-  width: 472px;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+h2 {
+    font-family: Manrope, serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    width: 472px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.small_div{
-  width: 38px;
-  height: 3px;
-  background: var(--gradient)
+
+.small_div {
+    width: 38px;
+    height: 3px;
+    background: var(--gradient)
 }

@@ -34,7 +34,8 @@
     flex-direction: column;
     align-items: flex-start;
 }
-.started{
+
+.started {
     width: 190px;
     height: 60px;
     border-radius: 40px;
@@ -52,22 +53,25 @@
 }
 
 
-.started:hover{
+.started:hover {
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 1480px) {
-    .cta_left{
+    .cta_left {
         margin-top: -25px;
         width: 622px;
     }
-    .cta{
+
+    .cta {
         height: auto;
         flex-wrap: wrap;
         gap: 20px;
     }
 }
-@media screen and (max-width: 481px){
-    .cta{
+
+@media screen and (max-width: 481px) {
+    .cta {
         width: 92vw;
         margin: 120px 4vw;
     }

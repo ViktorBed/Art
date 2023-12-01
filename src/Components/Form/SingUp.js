@@ -3,7 +3,7 @@ import {useState} from "react";
 import {Form} from "./Form";
 import "./form.css"
 
-export function SingUp (){
+export function SingUp() {
     const [values, setValues] = useState({
         username: "",
         email: "",
@@ -56,16 +56,15 @@ export function SingUp (){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         if (!inputs.required) {
             window.location.href = "https://m.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs";
         }
     };
 
     const onChange = (e) => {
-        setValues({ ...values, [e.target.name]: e.target.value });
+        setValues({...values, [e.target.name]: e.target.value});
     };
-
 
 
     return (

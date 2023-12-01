@@ -2,7 +2,7 @@ import React from "react";
 
 import "./feature.css"
 
-export function Features({ title, text }) {
+export function Features({title, text}) {
     return (
         <>
             <section className="feature_mid_block">

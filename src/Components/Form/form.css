@@ -1,4 +1,4 @@
-.register{
+.register {
     color: var(--black);
     font-family: Manrope, serif;
     font-size: 54px;
@@ -9,13 +9,13 @@
     text-align: center;
 }
 
-.formInput{
+.formInput {
     display: flex;
     flex-direction: column;
     width: 500px;
 }
 
-input{
+input {
     padding: 15px;
     font-family: Manrope, serif;
     margin: 15px 0;
@@ -26,7 +26,7 @@ input{
 }
 
 
-label{
+label {
     font-family: Manrope, serif;
     font-size: 12px;
     color: var(--black);
@@ -34,7 +34,7 @@ label{
 
 }
 
-span{
+span {
     font-size: 12px;
     color: var(--error);
     display: none;
@@ -43,14 +43,15 @@ span{
 
 }
 
-input:invalid[focused="true"]{
+input:invalid[focused="true"] {
     border: 1px solid var(--error);
 }
 
-input:invalid[focused="true"] ~ span{
+input:invalid[focused="true"] ~ span {
     display: block;
 }
-.submit{
+
+.submit {
     transform: scale(1);
     transition: .5s ease;
     width: 500px;
@@ -64,11 +65,13 @@ input:invalid[focused="true"] ~ span{
     font-weight: 400;
     font-size: 18px;
 }
-.submit:hover{
+
+.submit:hover {
     transform: scale(1.1);
 }
-@media  screen and (max-width: 1024px){
-    .formInput,.submit{
+
+@media screen and (max-width: 1024px) {
+    .formInput, .submit {
         width: 70vw;
     }
 }

@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import "./cta.css"
 import {Modal} from "../Modal Window/Modal";
 import {SingUp} from "../Form/SingUp";
+
 export function CTA() {
     const [modalActive, setModalActive] = useState(false)
 

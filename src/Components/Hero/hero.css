@@ -43,7 +43,7 @@
     outline: none;
 }
 
-.get{
+.get {
     background-color: var(--white);
     border-radius: 0 5px 5px 0;
     width: 174px;
@@ -60,10 +60,12 @@
     transition: .5s ease;
     text-align: center;
 }
-.get:hover{
+
+.get:hover {
     transform: scale(1.1);
 }
-.h3{
+
+.h3 {
     color: var(--black);
     font-family: Manrope, serif;
     font-size: 20px;
@@ -137,10 +139,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .left_block{
+    .left_block {
         align-items: center;
         margin: 120px 0;
     }
+
     .hero {
         scale: 1;
         flex-direction: column;
@@ -148,51 +151,61 @@
         height: 1800px;
 
     }
-    #card{
+
+    #card {
         width: 80vw;
         height: 100vw;
         min-width: unset;
     }
 
-    .hero{
+    .hero {
         width: 80vw;
         justify-content: center;
         margin: auto;
     }
-    h1,.desc{
+
+    h1, .desc {
         width: auto;
         flex-wrap: wrap;
         margin: auto;
         text-align: center;
     }
+
     .left_block p {
         width: auto;
     }
-    .form{
+
+    .form {
         scale: .8;
         margin: auto;
         width: auto;
     }
-    .email{
+
+    .email {
         width: 42vw;
     }
 }
-@media screen and (max-width: 481px){
-    .hero{
+
+@media screen and (max-width: 481px) {
+    .hero {
         width: 92vw;
         margin-bottom: 0;
     }
-    .email{
+
+    .email {
         display: none;
     }
-    .get{
+
+    .get {
         border-radius: 5px;
     }
-    .signup{
+
+    .signup {
         flex-direction: column;
         align-items: center;
     }
-    #card{
+
+    #card {
         width: 92vw;
     }
 
