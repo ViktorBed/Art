@@ -24,7 +24,9 @@ input {
     background-color: var(--white);
     font-weight: 400;
 }
-
+input svg{
+    display: flex;
+}
 
 label {
     font-family: Manrope, serif;
@@ -68,6 +70,11 @@ input:invalid[focused="true"] ~ span {
 
 .submit:hover {
     transform: scale(1.1);
+}
+.password{
+    position: absolute;
+    top: 348px;
+    right: 50px;
 }
 
 @media screen and (max-width: 1024px) {

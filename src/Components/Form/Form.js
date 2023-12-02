@@ -1,18 +1,15 @@
-import {useState} from "react";
+import React, {useState} from "react";
 
 import "./form.css";
 
 export function Form(props) {
 
-
     const [focused, setFocused] = useState(false);
-    const {label, errorMessage, onChange, id, ...inputProps} = props;
+    const {label, errorMessage, onChange, id, icon, ...inputProps} = props;
 
     const handleFocus = () => {
         setFocused(true);
     };
-
-
 
     return (
         <div className="formInput">

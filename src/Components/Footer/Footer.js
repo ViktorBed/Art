@@ -6,26 +6,29 @@ import {Modal} from "../Modal Window/Modal";
 
 
 export function Footer() {
-    const [modalActive, setModalActive] = useState(false)
+    const [modalActive, setModalActive] = useState(false);
+    const [modalContent, setModalContent] = useState("SingUp");
 
-    const handleModule = () => {
-        setModalActive(true)
-    }
-
-    const [secondModalActive, setSecondModalActive] = useState(false)
-    const handleSecondModule = () => {
-        setSecondModalActive(true)
+    const handleClickPhone = () => {
+        setModalActive(true);
+        setModalContent("CopyPhone");
         navigator.clipboard.writeText(phone);
+    };
 
-    }
-    const phone = "+38(067)349-50-92"
+    const handleClickRegister = () => {
+        setModalActive(true);
+        setModalContent("SingUp");
+    };
+
+    const phone = "+38(067)349-50-92";
+
 
     return (
         <>
             <footer>
                 <section className="footer_top">
                     <h4 className="footer_h">Do you want to study art?<br/> Join today</h4>
-                    <button onClick={handleModule} type="button" className="request">Register & explore art</button>
+                    <button onClick={handleClickRegister} type="button" className="request">Register & explore art</button>
                 </section>
                 <section className="footer_blocks">
                     <nav className="logo_block">
@@ -62,16 +65,14 @@ export function Footer() {
                         <h4>Get in touch</h4>
                         <a href="https://www.google.com/maps/place/Львів,+Львівська+область,+79000/@49.832689,24.0122355,12z/data=!3m1!4b1!4m6!3m5!1s0x473add7c09109a57:0x4223c517012378e2!8m2!3d49.839683!4d24.029717!16zL20vMGQ3X24?entry=ttu"
                            className="footer_text">Lviv, Ukraine</a>
-                        <p onClick={handleSecondModule} className="footer_text">{phone}</p>
+                        <p onClick={handleClickPhone} className="footer_text">{phone}</p>
                         <a href="mailto:vbednarskii@gmail.com" className="footer_text">vbednarskii@gmail.com</a>
                     </nav>
                 </section>
             </footer>
             <Modal active={modalActive} setActive={setModalActive}>
-                <SingUp/>
-            </Modal>
-            <Modal active={secondModalActive} setActive={setSecondModalActive}>
-                <h3 className="h3">Copied</h3>
+                {modalContent === "SingUp" && <SingUp />}
+                {modalContent === "CopyPhone" && <h3 className="h3">Copied</h3>}
             </Modal>
         </>
     )

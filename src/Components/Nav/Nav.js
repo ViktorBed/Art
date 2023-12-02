@@ -11,6 +11,7 @@ export function Nav() {
         showNavbar();
     };
     const navRef = useRef();
+    const [modalActive, setModalActive] = useState(false)
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -20,7 +21,10 @@ export function Nav() {
             document.body.style.overflow = "clip";
         }
     }
-    const [modalActive, setModalActive] = useState(false)
+    if (!setModalActive){
+        document.body.style.overflow = "clip";
+
+    }
     const handleModule = () => {
         setModalActive(true)
     }
@@ -32,7 +36,7 @@ export function Nav() {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             if (scrollTop > lastScrollTop) {
-                setNavbarTop("- 120px");
+                setNavbarTop("-120px");
             } else {
                 setNavbarTop(0);
             }
