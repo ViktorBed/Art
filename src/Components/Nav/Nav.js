@@ -6,15 +6,20 @@ import {SingUp} from "../Form/SingUp";
 
 export function Nav() {
     const handleClick = (componentName) => {
+        const windowWidth = window.innerWidth;
         const component = document.getElementById(componentName);
         component.scrollIntoView({behavior: 'smooth'});
-        showNavbar();
+        if (windowWidth < 1024) {
+            showNavbar();
+        } else {
+            document.body.style.overflow = "auto";
+        }
     };
+
     const navRef = useRef();
     const [modalActive, setModalActive] = useState(false)
-
     const showNavbar = () => {
-        navRef.current.classList.toggle("responsive_nav");
+        navRef.current.classList.toggle("responsive_nav")
         if (navRef.current.classList.toggle("responsive_nav")){
             document.body.style.overflow = "auto";
         }if(navRef.current.classList.toggle("responsive_nav")) {
@@ -23,7 +28,6 @@ export function Nav() {
     }
     if (!setModalActive){
         document.body.style.overflow = "clip";
-
     }
     const handleModule = () => {
         setModalActive(true)
