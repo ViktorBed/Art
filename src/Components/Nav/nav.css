@@ -92,9 +92,10 @@
         transition: .5s ease-in-out;
         z-index: 500;
     }
-    .nav{
-    padding: 20px;
-        }
+
+    .nav {
+        padding: 20px;
+    }
 
     .nav .responsive_nav {
         transform: translateY(120vh);

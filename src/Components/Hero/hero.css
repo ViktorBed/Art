@@ -173,7 +173,6 @@
     }
 
     .form {
-        scale: .8;
         margin: auto;
         width: auto;
     }
@@ -186,7 +185,7 @@
 @media screen and (max-width: 481px) {
     .hero {
         width: 92vw;
-        margin-bottom: 0;
+        margin-bottom: 60px;
         height: auto;
     }
 

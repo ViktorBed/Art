@@ -28,7 +28,8 @@ export function Footer() {
             <footer>
                 <section className="footer_top">
                     <h4 className="footer_h">Do you want to study art?<br/> Join today</h4>
-                    <button onClick={handleClickRegister} type="button" className="request">Register & explore art</button>
+                    <button onClick={handleClickRegister} type="button" className="request">Register & explore art
+                    </button>
                 </section>
                 <section className="footer_blocks">
                     <nav className="logo_block">
@@ -49,9 +50,9 @@ export function Footer() {
                     <nav className="text_block">
                         <h4>Links</h4>
                         <a href="https://www.google.com.ua/?hl=uk" className="footer_text">Source</a>
-                        <a href="https://t.me/miktorrrrr" className="footer_text">Social Media</a>
+                        <a href="https://t.me/miktorrrrr" className="footer_text">Telegram</a>
                         <a href="https://www.linkedin.com/in/viktor-bednarski-8a5b2a207/"
-                           className="footer_text">Contact</a>
+                           className="footer_text">LinkedIn</a>
                     </nav>
                     <nav className="text_block">
                         <h4>Company</h4>
@@ -59,7 +60,7 @@ export function Footer() {
                             Conditions</a>
                         <a href="https://creativecommons.org/share-your-work/cclicenses/" className="footer_text">Privacy
                             Policy</a>
-                        <a href="https://github.com/ViktorBed" className="footer_text">Works</a>
+                        <a href="https://github.com/ViktorBed" className="footer_text">GitHub</a>
                     </nav>
                     <nav className="text_block">
                         <h4>Get in touch</h4>
@@ -71,7 +72,7 @@ export function Footer() {
                 </section>
             </footer>
             <Modal active={modalActive} setActive={setModalActive}>
-                {modalContent === "SingUp" && <SingUp />}
+                {modalContent === "SingUp" && <SingUp/>}
                 {modalContent === "CopyPhone" && <h3 className="h3">Copied</h3>}
             </Modal>
         </>

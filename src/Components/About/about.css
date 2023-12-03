@@ -37,7 +37,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    line-height: 75px;
+    line-height: 35px;
     letter-spacing: -0.96px;
 }
 
@@ -145,17 +145,23 @@
         width: 92vw;
         margin: 0 4vw;
     }
-    .about:hover{
+
+    .about:hover {
         background-image: url("/src/photos/rectangle.svg");
         flex-direction: column;
         background-position: center;
     }
-    .about_mid_link{
+
+    .about_mid_link {
         display: none;
     }
 
     .about_lower_text, .about_lower_block, .about_top_text {
         min-width: 80vw;
+    }
+
+    .about_lower_block {
+        gap: 20px;;
     }
 
 }

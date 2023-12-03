@@ -9,7 +9,6 @@ import {Blog} from "./Components/Blog/Blog";
 import {Footer} from "./Components/Footer/Footer";
 
 export function App() {
-console.log("render");
     return (
         <>
             <Nav/>

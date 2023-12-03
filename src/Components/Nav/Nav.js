@@ -20,14 +20,15 @@ export function Nav() {
     const [modalActive, setModalActive] = useState(false)
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav")
-        if (navRef.current.classList.toggle("responsive_nav")){
+        if (navRef.current.classList.toggle("responsive_nav")) {
             document.body.style.overflow = "auto";
-        }if(navRef.current.classList.toggle("responsive_nav")) {
-            document.body.style.overflow = "clip";
+        }
+        if (navRef.current.classList.toggle("responsive_nav")) {
+            document.body.style.overflow = "hidden";
         }
     }
-    if (!setModalActive){
-        document.body.style.overflow = "clip";
+    if (!setModalActive) {
+        document.body.style.overflow = "hidden";
     }
     const handleModule = () => {
         setModalActive(true)
@@ -72,7 +73,7 @@ export function Nav() {
                 <section className="navigation" ref={navRef}>
                     <div className="links">
                         <nav onClick={() => handleClick('hero')}>Home</nav>
-                        <nav onClick={() => handleClick('about')}>What is Art?</nav>
+                        <nav onClick={() => handleClick('about')}>What is Art</nav>
                         <nav onClick={() => handleClick('feature')}>Important</nav>
                         <nav onClick={() => handleClick('blog')}>Paintings</nav>
                         <nav onClick={() => handleClick('footer')}>Library</nav>

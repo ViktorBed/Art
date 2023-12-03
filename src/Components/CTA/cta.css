@@ -75,5 +75,9 @@
         width: 92vw;
         margin: 120px 4vw;
     }
+
+    .started {
+        width: inherit;
+    }
 }
 

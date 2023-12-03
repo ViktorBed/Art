@@ -3,7 +3,7 @@ import React from "react";
 import "./about.css"
 import {AboutContent} from "./AboutContent";
 
-const GptData = [
+const ArtData = [
     {
         title: 'Positive',
         text: 'Art can inspire us to be creative. For example, by reading a book, we can get ideas for our own creative expression.',
@@ -38,7 +38,7 @@ export function About() {
                     <p className="about_mid_link">Guernica by Pablo Picasso</p>
                 </section>
                 <section className="about_lower">
-                    {GptData.map((item, index) => (
+                    {ArtData.map((item, index) => (
                         <AboutContent title={item.title} text={item.text} key={item.title + index}/>
                     ))}
                 </section>
