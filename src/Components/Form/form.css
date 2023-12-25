@@ -43,6 +43,7 @@ span {
     opacity: 0;
     font-family: Manrope, serif;
     font-weight: 600;
+    height: 34px;
 }
 
 input:invalid[focused="true"] {
@@ -76,7 +77,7 @@ input:invalid[focused="true"] ~ span {
 
 .password {
     position: absolute;
-    bottom: 160px;
+    bottom: 175px;
     right: 50px;
 }
 
